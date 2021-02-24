@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+}
+.logo {
+    color: #E50914;
+    font-family: 'Bebas Neue', serif;
+    font-weight: 400;
+    position : absolute;
+    width : 30%;
+    height : 10%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation-name : move;
+    animation-duration : 3s;
+    animation-fill-mode : forwards;
+}
+.char1, .char12 {
+    font-size : 35px;
+    animation-name : font1;
+    animation-duration : 3s;
+    animation-fill-mode : forwards;
+}
+.char2, .char11 {
+    font-size : 36px;
+    animation-name : font2;
+    animation-duration : 3s;
+    animation-fill-mode : forwards;
+}
+.char3, .char10 {
+    font-size : 37px;
+    animation-name : font3;
+    animation-duration : 3s;
+    animation-fill-mode : forwards;
+}
+.char4, .char8, .char9 {
+    font-size : 38px;
+    animation-name : font4;
+    animation-duration : 3s;
+    animation-fill-mode : forwards;
+}
+.char5, .char6, .char7 {
+    font-size : 40px;
+    animation-name : font5;
+    animation-duration : 3s;
+    animation-fill-mode : forwards;
+}
+@keyframes move {
+    0% {opacity: 0; top: 45%; left: 35%;}
+    70% {opacity: 1; top : 45%; left: 35%;}
+    100% {opacity: 1; top : 0%; left : 35%;}
+}
+@keyframes font1 {
+    0% {font-size : 35px;}
+    70% {font-size : 35px;}
+    100% {font-size : 40px;}
+}
+@keyframes font2 {
+    0% {font-size : 36px;}
+    70% {font-size : 36px;}
+    100%{font-size : 39px;}
+}
+@keyframes font3 {
+    0% {font-size : 37px;}
+    70% {font-size : 37px;}
+    100%{font-size : 38px;}
+}
+@keyframes font4 {
+    0% {font-size : 38px;}
+    70% {font-size : 38px;}
+    100%{font-size : 37px;}
+}
+@keyframes font5 {
+    0% {font-size : 40px;}
+    70% {font-size : 40px;}
+    100%{font-size : 35px;}
+}
