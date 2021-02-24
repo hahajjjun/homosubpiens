@@ -1,0 +1,104 @@
+body{
+    background-color: black;
+}
+body {
+    padding: 0;
+}
+.grid {
+    border: 1px solid rgb(0,0,0);
+    border-width: 1px 0 0 1px;
+}
+
+.grid div {
+    border: 1px solid rgba(100,100,100);
+    border-width: 0 1px 1px 0;
+    float: left;
+}
+.logo {
+    color: #E50914;
+    font-family: 'Bebas Neue', serif;
+    font-weight: 400;
+    position : absolute;
+    width : 30%;
+    height : 10%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    left : 35%;
+    top : 0%;
+}
+.char1, .char12 {
+    font-size : 40px;
+}
+.char2, .char11 {
+    font-size : 39px;
+}
+.char3, .char10 {
+    font-size : 38px;
+}
+.char4, .char8, .char9 {
+    font-size : 37px;
+}
+.char5, .char6, .char7 {
+    font-size : 35px;
+}
+.block{
+    background-color : #E50914;
+    box-shadow : white 10px 10px;
+    opacity : 0.6;
+    height : fit-content;
+    width : 80%;
+    position : absolute;
+    align-items: center;
+    left : 10%;
+    top : 10%;
+    border-radius : 10px;
+    animation-name : fadeIn;
+    animation-duration : 3s;
+}
+/*
+.redblock{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+    width :fit-content;
+    border-radius : 8px;
+    margin : 10px 10px;
+    padding : 6px 10px;
+    font-size : 14px;
+    font-weight : 900;
+    color: white;
+    font-family :-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}*/
+.imgblock{
+    background-color : white;
+    width : fit-content;
+    opacity : 0.8;
+    padding : 8px;
+    border-radius : 10px;
+    position : relative;
+    margin : 15px 10px;
+}
+.infoblock{
+    color: white;
+    position : relative;
+    margin : 10px 10px;
+    font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight : 300;
+    font-size : 20px;
+    padding : 10px;
+    border-radius : 5px;
+    width : fit-content;
+}
+.infoblock > sup {
+    font-size : 12px;
+    font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.infoblock > span {
+    font-size : 20px;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 0.6;}
+}
