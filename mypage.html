@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homoSUBpiens : YourSUB</title>
     <link rel = "stylesheet" type = "text/css" href = "css\main.css">
+    <link rel="stylesheet" href="css/header+footer.css">
     <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Bebas Neue">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body onresize="createGrid()">
-    <script language="JavaScript" type="text/javascript" src="js\grid.js"></script>
+<body >
+    <!--onresize="createGrid()"를 위에 body에 넣기-->
+    <!--<script language="JavaScript" type="text/javascript" src="js\grid.js"></script>-->
     <header>
         <span class = logo>
             <span class = char1>H</span>
@@ -28,24 +30,9 @@
         </span>
     </header>
     <section>
-        <span class = block 1>
-            <div class = imgblock 1>
-                <img src = img\sub_logos\NETFLIX_LOGO_ENG.png width=300px>
-            </div>
-            <div class = infoblock 1>
-                <span class = time>12</span>
-                <sup>개월 동안&ensp;</sup>
-                <span class = subtotpay>120000</span>
-                <sup>원</sup>
-                &emsp;
-                이번 달 : 
-                <span class = pay>10000</span>
-                <sup>원</sup>                
-            </div>
-        </span>
+        <div class = "flex_boxes">
+            <script language="JavaScript" type="text/javascript" src="js\box.js"></script>
+        </div>
     </section>
-    <footer>
-
-    </footer>
 </body>
 </html>
